@@ -9,3 +9,5 @@ FROM openjdk:16-alpine
 
 COPY --from=maven target/InviteRoles-*-jar-with-dependencies.jar /java.jar
 COPY ./entry.sh /entry.sh
+
+CMD ["/entry.sh"]
