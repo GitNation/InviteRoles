@@ -256,17 +256,5 @@ public class InviteRoles
 
         InviteRoles inviteRoles = new InviteRoles(token, dbPath);
         inviteRoles.run();
-
-        try
-        {
-            System.in.read();
-            LOGGER.info("Application terminated from console. Goodbye!");
-            inviteRoles.shutdown();
-            System.exit(0);
-        }
-        catch (IOException e)
-        {
-            LOGGER.error("Unable to read from console", e);
-        }
     }
 }
