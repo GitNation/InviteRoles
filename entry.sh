@@ -2,4 +2,4 @@
 
 echo 'Starting the bot...'
 
-java -jar /java.jar --token="${DISCORD_TOKEN}" --db="/var/data/db.sqlite"
+java -jar /java.jar --token="${DISCORD_TOKEN}" --db="/data/db.sqlite"
